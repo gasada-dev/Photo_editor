@@ -352,6 +352,8 @@ template {
   --base: #ffc600;
   --spacing: 10px;
   --blur: 10px;
+  --sepia: 0%;
+  --saturate: 100%;
 }
 
 body {
@@ -360,7 +362,7 @@ body {
   color: white;
   font-family: 'helvetica neue', sans-serif;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 body .h2 {
@@ -378,7 +380,7 @@ body .controls input {
 body img {
   padding: var(--spacing);
   background: var(--base);
-  -webkit-filter: blur(var(--blur));
-          filter: blur(var(--blur));
+  -webkit-filter: sepia(var(--sepia)) blur(var(--blur)) saturate(var(--saturate));
+          filter: sepia(var(--sepia)) blur(var(--blur)) saturate(var(--saturate));
 }
 /*# sourceMappingURL=style.css.map */
